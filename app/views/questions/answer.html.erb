@@ -1,2 +1,18 @@
-<h1>Questions#answer</h1>
-<p>Find me in app/views/questions/answer.html.erb</p>
+<h1>Stupid coaching</h1>
+
+<div class="quote-group">
+
+  <%= @question %>
+  <br>
+  <span class="author">– You</span>
+</div>
+
+
+<div class="quote-group">
+
+  <%= @coach_answer %>
+  <br>
+  <span class="author">– Your coach</span>
+</div>
+
+<%= link_to "Ask another question", ask_path %>
